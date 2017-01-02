@@ -1,4 +1,4 @@
-MACHTYPE?=$(shell arch)
+MACHTYPE?=$(shell uname -m)
 DESTDIR?=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))/../..
 
 CC=gcc
