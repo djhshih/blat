@@ -1,3 +1,8 @@
+# DISCLAIMER
+
+This is a fork of the BLAT package (v35) written by Jim Kent. The package has
+been restructured to ease compilation and installation. Note the license below.
+
 # CONTENTS AND COPYRIGHT
 
 This archive contains the entire source tree for BLAT and
@@ -29,6 +34,6 @@ on SunOS, do
     setenv SOCKETLIB "-lsocket -lnsl -lresolv"
 
 
-The executables will be installed to `bin` within the project directory by default, the header files to `include`, and the libraries to `lib`. You may change `${DESTDIR}` to change the prefix of the install path by:
+The executables will be installed to `bin` within the package directory by default, the header files to `include`, and the libraries to `lib`. You may change `${DESTDIR}` to change the prefix of the install path by:
 
     DESTDIR=/usr/local make
