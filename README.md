@@ -11,28 +11,24 @@ users should contact jim_kent@pacbell.net for access to other modules.
 
 Prerequisite: `libpng` library and developmental headers.
 
-If you are on Linux, no setup is necessary.
+If you are on Linux, no setup is necessary, and you can simply
 
-If you're on an alpha system do:
+    make
+
+
+If you're on an alpha system, do
 
     setenv SOCKETLIB -lxnet
 
-on Solaris do
+on Solaris, do
 
     setenv SOCKETLIB "-lsocket -lnsl"
 
-on SunOS do
+on SunOS, do
 
     setenv SOCKETLIB "-lsocket -lnsl -lresolv"
 
-Within the top level directory, simply do
-
-```
-make
-```
 
 The executables will be installed to `bin` by default, the header files to `include`, and the libraries to `lib`. You may change `${DESTDIR}` to change the prefix of the install path by:
 
-```
-DESTDIR=/usr/local make
-```
+    DESTDIR=/usr/local make
