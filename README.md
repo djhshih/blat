@@ -29,6 +29,6 @@ on SunOS, do
     setenv SOCKETLIB "-lsocket -lnsl -lresolv"
 
 
-The executables will be installed to `bin` by default, the header files to `include`, and the libraries to `lib`. You may change `${DESTDIR}` to change the prefix of the install path by:
+The executables will be installed to `bin` within the project directory by default, the header files to `include`, and the libraries to `lib`. You may change `${DESTDIR}` to change the prefix of the install path by:
 
     DESTDIR=/usr/local make
