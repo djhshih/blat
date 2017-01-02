@@ -1,4 +1,4 @@
-MACHTYPE:=$(shell uname -p)
+MACHTYPE?=$(shell uname -p)
 
 CC=gcc
 COPT=-O -g
@@ -11,14 +11,10 @@ L=
 # pthreads is required
 L+=-pthread
 
-ifeq (${BINDIR},)
-    BINDIR = ${HOME}/bin/${MACHTYPE}
-endif
+BINDIR?=/bin
 
 MKDIR=mkdir -p
-ifeq (${STRIP},)
-   STRIP=strip
-endif
+STRIP?=strip
 
 # portable naming of compiled executables: add ".exe" if compiled on 
 # Windows (with cygwin).
