@@ -16,7 +16,7 @@ If you are on Linux, no setup is necessary, and you can simply
     make
 
 
-If you're on an alpha system, do
+If you're on an alpha system, do the following before `make`:
 
     setenv SOCKETLIB -lxnet
 
