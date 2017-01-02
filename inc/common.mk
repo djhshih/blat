@@ -1,5 +1,5 @@
 MACHTYPE?=$(shell uname -p)
-DESTDIR?=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))/.. 
+DESTDIR?=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))/..
 
 CC=gcc
 COPT=-O -g
