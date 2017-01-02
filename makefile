@@ -17,5 +17,8 @@ all:
 	cp -r src/inc/*.h ${DESTDIR}/include
 	cp -r src/lib/*/*.a ${DESTDIR}/lib
 
+install:
+	# already done during build
+
 clean:
 	rm -f src/*/*.o src/*/*/*.o src/lib/*/*.a
