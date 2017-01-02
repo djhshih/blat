@@ -2,7 +2,7 @@ MACHTYPE?=$(shell uname -m)
 DESTDIR?=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))/../..
 
 CC=gcc
-COPT=-O -g
+COPT=-O2
 HG_DEFS=-D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_GNU_SOURCE -DMACHTYPE_${MACHTYPE}
 HG_INC=-I../inc -I../../inc -I../../../inc -I../../../../inc -I../../../../../inc
 
