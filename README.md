@@ -14,10 +14,15 @@ Prerequisite: `libpng` library and developmental headers.
 If you are on Linux, no setup is necessary.
 
 If you're on an alpha system do:
+
     setenv SOCKETLIB -lxnet
+
 on Solaris do
+
     setenv SOCKETLIB "-lsocket -lnsl"
+
 on SunOS do
+
     setenv SOCKETLIB "-lsocket -lnsl -lresolv"
 
 Within the top level directory, simply do
