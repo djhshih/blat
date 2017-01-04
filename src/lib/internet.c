@@ -26,6 +26,10 @@ bits32 internetHostIp(char *hostName)
 /* Get IP v4 address (in host byte order) for hostName.
  * Warn and return 0 if there's a problem. */
 {
+#ifdef _STATIC
+// 127.0.0.1
+return	2130706433;
+#else
 bits32 ret;
 if (internetIsDottedQuad(hostName))
     {
@@ -55,7 +59,9 @@ else
 
     }
 return ret;
+#endif
 }
+
 
 boolean internetFillInAddress(char *hostName, int port, struct sockaddr_in *address)
 /* Fill in address. Return FALSE if can't.  */

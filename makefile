@@ -13,7 +13,7 @@ all:
 	cd src/utils/faToTwoBit && $(MAKE)
 	cd src/utils/twoBitToFa && $(MAKE)
 	cd src/utils/twoBitInfo && $(MAKE)
-	cd src/webBlat && $(MAKE)
+	if [[ "$(CFLAGS)" != *"-D_STATIC"* ]]; then cd src/webBlat && $(MAKE); fi
 	cp -r src/inc/*.h ${DESTDIR}/include
 	cp -r src/lib/*/*.a ${DESTDIR}/lib
 

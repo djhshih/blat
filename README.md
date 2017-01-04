@@ -34,3 +34,7 @@ The executables will be installed to `bin` within the package directory by defau
 
     DESTDIR=/usr/local make
 
+## Building static executables
+
+See `static-build.md`.
+

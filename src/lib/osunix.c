@@ -207,7 +207,7 @@ char pathName[512];
 
 if ((d = opendir(dir)) == NULL)
     return NULL;
-memcpy(pathName, dir, dirNameSize);
+strcpy(pathName, dir);
 pathName[dirNameSize] = '/';
 
 while ((de = readdir(d)) != NULL)
@@ -492,11 +492,15 @@ assert(sameString(simplifyPathToDir("a/b///"),"a/b"));
 char *getUser()
 /* Get user name */
 {
+#ifdef _STATIC
+return "guest";
+#else
 uid_t uid = geteuid();
 struct passwd *pw = getpwuid(uid);
 if (pw == NULL)
     errnoAbort("getUser: can't get user name for uid %d", (int)uid);
 return pw->pw_name;
+#endif
 }
 
 int mustFork()
