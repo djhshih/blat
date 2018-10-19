@@ -11,7 +11,7 @@ for conditions of use.
 No changes have been made to any of the header or source files.
 Therefore, all bugs (e.g. nondeterministic behaviour and memory leaks) are inherited from upstream.
 
-For a BLAT package further stripped down to the minimal set of files and dependencies, see [blat-lite](https://github.com/djhshih/blat-lite).
+For a BLAT package further stripped down to the minimal set of files and no external dependencies, see [blat-lite](https://github.com/djhshih/blat-lite).
 
 For a minimal implementation of BLAT with the smallest code footprint, see [mlat](https://github.com/djhshih/mlat).
 
