@@ -9,7 +9,7 @@ for conditions of use.
 # Remarks
 
 No changes have been made to any of the header or source files.
-Therefore, all bugs (e.g. undeterministic behaviour and memory leaks) are inherited from upstream.
+Therefore, all bugs (e.g. nondeterministic behaviour and memory leaks) are inherited from upstream.
 
 For a BLAT package further stripped down to the minimal set of files and dependencies, see [blat-lite](https://github.com/djhshih/blat-lite).
 
