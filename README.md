@@ -6,6 +6,14 @@ This is a fork of the BLAT package (v35) written by Jim Kent. The package has
 been restructured to ease compilation and installation. See the `LICENSE.txt`
 for conditions of use.
 
+# Remarks
+
+No changes have been made to any of the header or source files.
+Therefore, all bugs (e.g. undeterministic behaviour and memory leaks) are inherited from upstream.
+
+For a BLAT package further stripped down to the minimal set of files and dependencies, see [blat-lite](https://github.com/djhshih/blat-lite).
+
+For a minimal implementation of BLAT with the smallest code footprint, see [mlat](https://github.com/djhshih/mlat).
 
 # Installation
 
