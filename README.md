@@ -1,6 +1,8 @@
 # BLAT: BLAST-Like Alignment Tool
 
-BLAT is a tool for sequence alignment.
+BLAT is a legacy tool for sequence alignment that is not under active development.
+
+New users should consider using [razers3](https://github.com/seqan/seqan/tree/master/apps/razers3).
 
 This is a fork of the BLAT package (v35) written by Jim Kent. The package has
 been restructured to ease compilation and installation. See the `LICENSE.txt`
